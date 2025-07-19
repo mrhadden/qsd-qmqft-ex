@@ -1,0 +1,888 @@
+%  LaTeX support: latex@mdpi.com 
+%  For support, please attach all files needed for compiling as well as the log file, and specify your operating system, LaTeX version, and LaTeX editor.
+
+\newcommand{\qsdgst}{General Substrate Theory}
+\newcommand{\qsd}{Quantum Substrate Dynamics}
+\newcommand{\qsdqsta}{GST}
+\newcommand{\qsda}{QST}
+
+\newcommand{\qsdpapertitle}{Causal Expansion of Quantum Structure: Coherence Chains, Multipartite Collapse, and Gradient-Limited Emission in QSD}
+\newcommand{\qsdauthorname}{Michael Bush}
+\newcommand{\qsdauthorinitials}{M.B.}
+\newcommand{\qsdauthoremail}{mbush@haddentechnologies.com}
+\newcommand{\qsdorcid}{0009-0003-9747-9109}
+\newcommand{\qsdcorp}{Hadden Technologies Corporation}
+\newcommand{\qsdkeywords}{QSD, Quantum collapse, Causality interval, Collapse Propagation Acceptance, Coherence pacing, Structural quantum dynamics, Entanglement decay, Quantum re-lock}
+\newcommand{\qsdmethodstatement}
+{This work was developed from first principles, extending the Quantum Substrate Dynamics (QSD) framework by modeling post-collapse evolution as a physically gated process. All derivations follow from a single structural axiom: that coherence-supported configurations may only evolve when permitted by local substrate conditions. Collapse is treated as a structural rupture at the Collapse Boundary (CB), followed by a finite causal interval—Collapse Propagation Acceptance (CPA)—during which scalar tension propagates and coherence recovery is evaluated. Quantum persistence is modeled as Causality Interval (CI) chaining under pacing constraints. The approach assumes no particles, observers, or intrinsic time, but derives all continuity, correlation, and emission behavior from coherence geometry and substrate pacing. This method emphasizes causal completeness, directional time, and structural closure across three-dimensional coherence volumes, ensuring compatibility with observed quantum behavior and relativistic bounds.}
+\newcommand{\qsdabstract}
+{This paper extends the causal framework introduced in prior work on quantum collapse by exploring the structural dynamics that govern continuity, reappearance, and multipartite interaction in quantum systems. Within the Quantum Substrate Dynamics (QSD) model, evolution is not continuous but occurs in discrete, coherence-permitted spans called Causality Intervals (CI), each bounded by a Collapse Boundary (CB) and optionally producing a Quantum Emission Opportunity (QEO). We introduce the concept of \emph{Collapse Propagation Acceptance} (CPA), the finite causal interval following collapse in which the substrate processes offload propagation, clears scalar tension, and determines whether re-locking is structurally permitted. This framework formalizes the delay between quantum events as a pacing-limited transition zone, replacing axiomatic gaps in conventional interpretations with physically gated evolution. We also define \emph{CI chaining}, the mechanism by which quantum persistence is maintained through sequential causal intervals under substrate constraints. Together, CPA and CI chaining provide a complete causal cycle---from coherence initiation through collapse and conditional restart---that supports entanglement decay, emission asymmetry, and observer-relative time asymmetry as emergent phenomena of structural pacing. This approach maintains the predictive structure of QM/QFT while supplying the missing physicality beneath their formalism.
+}
+
+%=================================================================
+\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+%\documentclass[preprints,article,submit,pdftex,moreauthors]{Definitions/mdpi} 
+% For posting an early version of this manuscript as a preprint, you may use "preprints" as the journal. Changing "submit" to "accept" before posting will remove line numbers.
+
+% Below journals will use APA reference format:
+% admsci, aieduc, behavsci, businesses, econometrics, economies, education, ejihpe, famsci, games, humans, ijcs, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth
+
+% Below journals will use Chicago reference format:
+% arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci
+
+%--------------------
+% Class Options:
+%--------------------
+%----------
+% journal
+%----------
+% Choose between the following MDPI journals:
+% accountaudit, acoustics, actuators, addictions, adhesives, admsci, adolescents, aerobiology, aerospace, agriculture, agriengineering, agrochemicals, agronomy, ai, air, algorithms, allergies, alloys, amh, analytica, analytics, anatomia, anesthres, animals, antibiotics, antibodies, antioxidants, applbiosci, appliedchem, appliedmath, appliedphys, applmech, applmicrobiol, applnano, applsci, aquacj, architecture, arm, arthropoda, arts, asc, asi, astronomy, atmosphere, atoms, audiolres, automation, axioms, bacteria, batteries, bdcc, behavsci, beverages, biochem, bioengineering, biologics, biology, biomass, biomechanics, biomed, biomedicines, biomedinformatics, biomimetics, biomolecules, biophysica, biosensors, biosphere, biotech, birds, blockchains, bloods, blsf, brainsci, breath, buildings, businesses, cancers, carbon, cardiogenetics, catalysts, cells, ceramics, challenges, chemengineering, chemistry, chemosensors, chemproc, children, chips, cimb, civileng, cleantechnol, climate, clinbioenerg, clinpract, clockssleep, cmd, cmtr, coasts, coatings, colloids, colorants, commodities, complications, compounds, computation, computers, condensedmatter, conservation, constrmater, cosmetics, covid, crops, cryo, cryptography, crystals, csmf, ctn, curroncol, cyber, dairy, data, ddc, dentistry, dermato, dermatopathology, designs, devices, diabetology, diagnostics, dietetics, digital, disabilities, diseases, diversity, dna, drones, dynamics, earth, ebj, ecm, ecologies, econometrics, economies, education, eesp, ejihpe, electricity, electrochem, electronicmat, electronics, encyclopedia, endocrines, energies, eng, engproc, ent, entomology, entropy, environments, epidemiologia, epigenomes, esa, est, famsci, fermentation, fibers, fintech, fire, fishes, fluids, foods, forecasting, forensicsci, forests, fossstud, foundations, fractalfract, fuels, future, futureinternet, futureparasites, futurepharmacol, futurephys, futuretransp, galaxies, games, gases, gastroent, gastrointestdisord, gastronomy, gels, genealogy, genes, geographies, geohazards, geomatics, geometry, geosciences, geotechnics, geriatrics, glacies, grasses, greenhealth, gucdd, hardware, hazardousmatters, healthcare, hearts, hemato, hematolrep, heritage, higheredu, highthroughput, histories, horticulturae, hospitals, humanities, humans, hydrobiology, hydrogen, hydrology, hygiene, idr, iic, ijerph, ijfs, ijgi, ijmd, ijms, ijns, ijpb, ijt, ijtm, ijtpp, ime, immuno, informatics, information, infrastructures, inorganics, insects, instruments, inventions, iot, j, jal, jcdd, jcm, jcp, jcs, jcto, jdad, jdb, jeta, jfb, jfmk, jimaging, jintelligence, jlpea, jmahp, jmmp, jmms, jmp, jmse, jne, jnt, jof, joitmc, joma, jop, jor, journalmedia, jox, jpbi, jpm, jrfm, jsan, jtaer, jvd, jzbg, kidney, kidneydial, kinasesphosphatases, knowledge, labmed, laboratories, land, languages, laws, life, lights, limnolrev, lipidology, liquids, literature, livers, logics, logistics, lubricants, lymphatics, machines, macromol, magnetism, magnetochemistry, make, marinedrugs, materials, materproc, mathematics, mca, measurements, medicina, medicines, medsci, membranes, merits, metabolites, metals, meteorology, methane, metrics, metrology, micro, microarrays, microbiolres, microelectronics, micromachines, microorganisms, microplastics, microwave, minerals, mining, mmphys, modelling, molbank, molecules, mps, msf, mti, multimedia, muscles, nanoenergyadv, nanomanufacturing, nanomaterials, ncrna, ndt, network, neuroglia, neurolint, neurosci, nitrogen, notspecified, nursrep, nutraceuticals, nutrients, obesities, oceans, ohbm, onco, oncopathology, optics, oral, organics, organoids, osteology, oxygen, parasites, parasitologia, particles, pathogens, pathophysiology, pediatrrep, pets, pharmaceuticals, pharmaceutics, pharmacoepidemiology, pharmacy, philosophies, photochem, photonics, phycology, physchem, physics, physiologia, plants, plasma, platforms, pollutants, polymers, polysaccharides, populations, poultry, powders, preprints, proceedings, processes, prosthesis, proteomes, psf, psych, psychiatryint, psychoactives, psycholint, publications, purification, quantumrep, quaternary, qubs, radiation, reactions, realestate, receptors, recycling, regeneration, religions, remotesensing, reports, reprodmed, resources, rheumato, risks, robotics, rsee, ruminants, safety, sci, scipharm, sclerosis, seeds, sensors, separations, sexes, signals, sinusitis, siuj, skins, smartcities, sna, societies, socsci, software, soilsystems, solar, solids, spectroscj, sports, standards, stats, std, stresses, surfaces, surgeries, suschem, sustainability, symmetry, synbio, systems, tae, targets, taxonomy, technologies, telecom, test, textiles, thalassrep, therapeutics, thermo, timespace, tomography, tourismhosp, toxics, toxins, transplantology, transportation, traumacare, traumas, tropicalmed, universe, urbansci, uro, vaccines, vehicles, venereology, vetsci, vibration, virtualworlds, viruses, vision, waste, water, wem, wevj, wild, wind, women, world, youth, zoonoticdis
+
+%---------
+% article
+%---------
+% The default type of manuscript is "article", but can be replaced by: 
+% abstract, addendum, article, benchmark, book, bookreview, briefcommunication, briefreport, casereport, changes, clinicopathologicalchallenge, comment, commentary, communication, conceptpaper, conferenceproceedings, correction, conferencereport, creative, datadescriptor, discussion, entry, expressionofconcern, extendedabstract, editorial, essay, erratum, fieldguide, hypothesis, interestingimages, letter, meetingreport, monograph, newbookreceived, obituary, opinion, proceedingpaper, projectreport, reply, retraction, review, perspective, protocol, shortnote, studyprotocol, supfile, systematicreview, technicalnote, viewpoint, guidelines, registeredreport, tutorial,  giantsinurology, urologyaroundtheworld
+% supfile = supplementary materials
+
+%----------
+% submit
+%----------
+% The class option "submit" will be changed to "accept" by the Editorial Office when the paper is accepted. This will only make changes to the frontpage (e.g., the logo of the journal will get visible), the headings, and the copyright information. Also, line numbering will be removed. Journal info and pagination for accepted papers will also be assigned by the Editorial Office.
+
+%------------------
+% moreauthors
+%------------------
+% If there is only one author the class option oneauthor should be used. Otherwise use the class option moreauthors.
+
+%---------
+% pdftex
+%---------
+% The option pdftex is for use with pdfLaTeX. Remove "pdftex" for (1) compiling with LaTeX & dvi2pdf (if eps figures are used) or for (2) compiling with XeLaTeX.
+
+%=================================================================
+% MDPI internal commands - do not modify
+\firstpage{1} 
+\makeatletter 
+\setcounter{page}{\@firstpage} 
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{0}
+\pubyear{2025}
+\copyrightyear{2025}
+%\externaleditor{Firstname Lastname} % More than 1 editor, please add `` and '' before the last editor name
+\datereceived{ } 
+\daterevised{ } % Comment out if no revised date
+\dateaccepted{ } 
+\datepublished{ } 
+%\datecorrected{} % For corrected papers: "Corrected: XXX" date in the original paper.
+%\dateretracted{} % For retracted papers: "Retracted: XXX" date in the original paper.
+\hreflink{https://doi.org/} % If needed use \linebreak
+%\doinum{}
+%\pdfoutput=1 % Uncommented for upload to arXiv.org
+%\CorrStatement{yes}  % For updates
+%\longauthorlist{yes} % For many authors that exceed the left citation part
+
+%=================================================================
+% Add packages and commands here. The following packages are loaded in our class file: fontenc, inputenc, calc, indentfirst, fancyhdr, graphicx, epstopdf, lastpage, ifthen, float, amsmath, amssymb, lineno, setspace, enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, colortbl, soul, multirow, microtype, tikz, totcount, changepage, attrib, upgreek, array, tabularx, pbox, ragged2e, tocloft, marginnote, marginfix, enotez, amsthm, natbib, hyperref, cleveref, scrextend, url, geometry, newfloat, caption, draftwatermark, seqsplit
+% cleveref: load \crefname definitions after \begin{document}
+
+\usepackage{tikz}
+\usetikzlibrary{angles, quotes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+%=================================================================
+% Please use the following mathematics environments: Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem, Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation, Assumption
+%% For proofs, please use the proof environment (the amsthm package is loaded by the MDPI class).
+
+%=================================================================
+% Full title of the paper (Capitalized)
+\Title{\qsdpapertitle}
+
+
+% MDPI internal command: Title for citation in the left column
+\TitleCitation{Title}
+
+% Author Orchid ID: enter ID or remove command
+\newcommand{\orcidauthorA}{\qsdorcid} % Add \orcidA{} behind the author's name
+%\newcommand{\orcidauthorB}{0000-0000-0000-000X} % Add \orcidB{} behind the author's name
+
+% Authors, for the paper (add full first names)
+\Author{\qsdauthorname $^{1}$\orcidA{}}
+
+%\longauthorlist{yes}
+
+% MDPI internal command: Authors, for metadata in PDF
+\AuthorNames{\qsdauthorname}
+
+% MDPI internal command: Authors, for citation in the left column, only choose below one of them according to the journal style
+% If this is a Chicago style journal 
+% (arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci): 
+% Lastname, Firstname, Firstname Lastname, and Firstname Lastname.
+
+% If this is a APA style journal 
+% (admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth): 
+% Lastname, F., Lastname, F., \& Lastname, F.
+
+% If this is a ACS style journal (Except for the above Chicago and APA journals, all others are in the ACS format): 
+% Lastname, F.; Lastname, F.; Lastname, F.
+\isAPAStyle{%
+       \AuthorCitation{Lastname, F., Lastname, F., \& Lastname, F.}
+         }{%
+        \isChicagoStyle{%
+        \AuthorCitation{Lastname, Firstname, Firstname Lastname, and Firstname Lastname.}
+        }{
+        \AuthorCitation{Lastname, F.; Lastname, F.; Lastname, F.}
+        }
+}
+
+% Affiliations / Addresses (Add [1] after \address if there is only one affiliation.)
+\address{%
+$^{1}$ \quad \qsdcorp; \qsdauthoremail\\
+%$^{2}$ \quad Affiliation 2; e-mail@e-mail.com
+}
+
+% Contact information of the corresponding author
+\corres{Correspondence: \qsdauthoremail (\qsdauthorinitials)}
+
+% Current address and/or shared authorship
+%\firstnote{Shiloh, IL: Independent Researcher.}  % Current address should not be the same as any items in the Affiliation section.
+%\secondnote{These authors contributed equally to this work.}
+% The commands \thirdnote{} till \eighthnote{} are available for further notes
+
+%\simplesumm{} % Simple summary
+
+%\conference{} % An extended version of a conference paper
+
+
+% Abstract (Do not insert blank lines, i.e. \\) 
+\abstract{\qsdabstract}
+
+% Keywords
+\keyword{\qsdkeywords} 
+
+% The fields PACS, MSC, and JEL may be left empty or commented out if not applicable
+%\PACS{J0101}
+%\MSC{}
+%\JEL{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Diversity
+%\LSID{\url{http://}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Applied Sciences
+%\featuredapplication{Authors are encouraged to provide a concise description of the specific application or a potential application of the work. This section is not mandatory.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Data
+%\dataset{DOI number or link to the deposited data set if the data set is published separately. If the data set shall be published as a supplement to this paper, this field will be filled by the journal editors. In this case, please submit the data set as a supplement.}
+%\datasetlicense{License under which the data set is made available (CC0, CC-BY, CC-BY-SA, CC-BY-NC, etc.)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal BioTech, Fishes, Neuroimaging and Toxins
+%\keycontribution{The breakthroughs or highlights of the manuscript. Authors can write one or two sentences to describe the most important part of the paper.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Encyclopedia
+%\encyclopediadef{For entry manuscripts only: please provide a brief overview of the entry title instead of an abstract.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Only for the journal Advances in Respiratory Medicine, Future, Sensors and Smart Cities
+%\addhighlights{yes}
+%\renewcommand{\addhighlights}{%
+%
+%\noindent This is an obligatory section in ``Advances in Respiratory Medicine'', ``Future'', ``Sensors'' and ``Smart Cities”, whose goal is to increase the discoverability and readability of the article via search engines and other scholars. Highlights should not be a copy of the abstract, but a simple text allowing the reader to quickly and simplified find out what the article is about and what can be cited from it. Each of these parts should be devoted up to 2~bullet points.\vspace{3pt}\\
+%\textbf{What are the main findings?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}\vspace{3pt}
+%\textbf{What is the implication of the main finding?}
+% \begin{itemize}[labelsep=2.5mm,topsep=-3pt]
+% \item First bullet.
+% \item Second bullet.
+% \end{itemize}
+%}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The order of the section titles is different for some journals. Please refer to the "Instructions for Authors” on the journal homepage.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Quantum mechanics (QM) and quantum field theory (QFT) provide powerful and predictive frameworks for describing microscopic systems. However, despite their empirical success, they offer no internal mechanism for what physically permits quantum evolution to proceed, what terminates it, or how structure reappears following collapse. Wavefunctions evolve smoothly under unitary rules until they don’t. Measurement outcomes emerge from formally discontinuous events. Collapse is postulated, not derived. Time is treated as a universal background, not a structural phenomenon.
+
+In previous work~\cite{bush-qmqft}, we proposed a physically grounded alternative: the \emph{Causality Interval} (CI), a finite coherence-permitted span during which quantum structures evolve under pacing constraints imposed by a conserved substrate. Collapse was reframed as a structural event---the termination of coherence support at a \emph{Collapse Boundary} (CB). Emission was not probabilistic, but serialized projection at a \emph{Quantum Emission Opportunity} (QEO), marking the end of causal permission for the current configuration.
+
+In this paper, we continue that development by introducing the concept of \emph{Collapse Propagation Acceptance} (CPA): a finite, causally active interval following collapse in which the substrate propagates the outcome of the prior interval, clears scalar tension, and evaluates whether a new CI may begin. CPA replaces the unstructured post-collapse gap in traditional models with a physically necessary recovery and evaluation phase. It explains the origin of temporal gaps between quantum events, emission asymmetry, and the bounded reach of entanglement under pacing constraints.
+
+We also formalize \emph{CI chaining}, the structural mechanism by which a quantum system may persist across multiple causal intervals. From this chaining logic emerges the structural basis for energy state transitions, particle persistence, and resonance-dependent correlation. The result is a complete causal sequence:
+\[
+\text{CI} \rightarrow \text{CB} \rightarrow \text{QEO} \rightarrow \text{CPA} \rightarrow \text{CI}^{\prime}
+\]
+where each stage is structurally constrained and causally ordered.
+
+This paper does not alter the predictive structure of QM or QFT. It preserves their mathematical outcomes while supplying the missing physical architecture beneath them. The familiar tools of quantum theory remain valid---but only when coherence is permitted, and only where the substrate agrees to re-lock.
+
+We do not discard the quantum toolbox. We give it a floor, walls, and a clock.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Materials and Methods}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\qsdmethodstatement
+\\
+In support of the editorial process, generative AI tools—specifically OpenAI's ChatGPT (version 4o, 2025)—were used to assist in:
+\begin{itemize}
+    \item Generating illustrative figures based on the author’s conceptual framework, with iterative refinement to ensure fidelity to the substrate-based dynamics of the model,
+    \item Researching, validating, and cross-referencing related scientific concepts to improve accuracy, contextual alignment, and clarity,
+    \item Summarizing and formatting externally sourced material already selected by the author.
+\end{itemize}
+
+No original theoretical contributions were generated by the AI system; all scientific claims, hypotheses, derivations, and interpretations were authored and reviewed by the human researcher. The use of AI is disclosed in alignment with journal policy for transparency in the writing process.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Results}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discussion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Structural Timing of Quantum Evolution}
+\subsection{The CI Cycle Revisited}
+
+In the foundational QSD framework, quantum evolution is not continuous, but occurs within bounded spans of substrate-supported coherence called \emph{Causality Intervals} (CI). Each CI represents a finite region—both in space and causal duration—within which a coherent structure is permitted to evolve. This permission is not automatic; it is granted by the substrate’s scalar pacing constraints and coherence compatibility. The CI is initiated when local conditions permit re-locking of a coherent geometry and concludes at a well-defined \emph{Collapse Boundary} (CB), beyond which structural evolution can no longer proceed.
+
+Unlike traditional quantum interpretations, which model collapse as an external or observer-induced discontinuity, QSD treats collapse as a \emph{structural resolution event}. Collapse does not happen \emph{in} time—it marks the termination of time for that structure. The CB represents the causal surface where all internal coherence activity is evaluated against substrate tolerances: accumulated tension, phase deformation, timing misalignment, and gradient overload are summed at this boundary. If the structure exceeds supportable coherence, collapse occurs.
+
+At this point, the system may produce a \emph{Quantum Emission Opportunity} (QEO)—a conditional serialization of internal coherence geometry into a radiative substrate mode. This emission is not guaranteed, nor is it instantaneous. It is constrained by the same scalar pacing logic that governs all coherence transitions. The QEO represents the final act of the CI, projecting available structure outward into the substrate.
+
+In traditional quantum mechanics, this entire cycle is compressed into the appearance of a probabilistic event. In QSD, each component of the CI cycle—initiation, evolution, collapse, emission—is structurally and causally distinct. This provides a foundation for understanding why quantum events appear discrete, why they follow quantized emission rules, and why continuity can only resume under specific substrate conditions.
+
+The remainder of this paper develops the structural consequences of this framework, introducing the \emph{Collapse Propagation Acceptance} (CPA) phase that bridges one CI to the next, and formalizing the conditions under which structures may chain across CIs to maintain persistent identity or correlation. The CI cycle is not merely a quantum bookkeeping trick—it is the substrate’s physical method for gating reality.
+
+\subsection{Introducing CPA: Collapse Propagation Acceptance}
+
+When a coherence structure reaches the end of its Causality Interval (CI), it crosses the Collapse Boundary (CB), a structurally enforced surface where the substrate terminates further causal evolution. At this boundary, internal coherence geometry either satisfies re-lock criteria for the next interval or fails, resulting in collapse. In either case, the substrate must process the outcome of the CI and determine whether continuation is physically permissible. This post-collapse transition phase is defined in QSD as the \emph{Collapse Propagation Acceptance} (CPA) interval.
+
+CPA is a finite, causally active span in which the substrate propagates the effects of collapse outward and recovers the coherence capacity necessary for subsequent structural re-locking. It includes both the scalar recovery period and the offload of collapse geometry into the surrounding substrate. Unlike standard collapse models, which treat this process as either instantaneous or undefined, QSD models CPA as a physically required and spatially extended interval. No new CI may begin until the CPA phase concludes.
+
+Collapse does not resolve at a single point in time or space. It is a radiant shell event---a spherical or anisotropic expansion of scalar activity and coherence deformation originating at the CB. This radiance defines the CPA boundary. Only regions that have cleared the CPA wavefront and reestablished coherence integrity may support a new Causality Interval. The CPA thus serves as both a \emph{buffer zone} and a \emph{causal gate}, ensuring that continuity is not assumed, but structurally permitted.
+
+This view provides a physical explanation for the observed spacing between quantum events, delays between emissions, and the coherence limits of entangled systems. It also introduces directional behavior under substrate gradients: CPA propagation may favor certain spatial regions for re-lock due to tension asymmetry or boundary interference, producing emission bias and asymmetric collapse cascades.
+
+In this framework, CPA replaces the traditional post-collapse “gap” with a structured interval of causal accounting. It is where the substrate performs coherence reconciliation: verifying whether structure may resume, or whether evolution must end. The CI does not lead directly into its successor; it leads into CPA, and only through CPA can the next causal structure emerge.
+
+\subsection{Substrate Gating and Tick Separation}
+
+In QSD, time is not a continuous parameter but a structural outcome of coherence pacing. Each Causality Interval (CI) represents a bounded span of permitted evolution, and the end of that interval is not automatically followed by the next. Instead, the substrate enforces a delay---a gated recovery process governed by scalar coherence pacing. This delay defines the causal structure of quantum evolution and sets the minimum spacing between observable quantum events.
+
+Following collapse, the substrate enters the \emph{Collapse Propagation Acceptance} (CPA) phase, during which no re-locking is allowed. The local region must complete scalar recovery, process any offloaded energy, and satisfy coherence reinitialization conditions. The duration and spatial extent of this gating interval are determined by the substrate’s scalar recovery speed $c_s$ and the coherence support length $L_{\text{coh}}$, yielding the characteristic causal delay:
+\[
+\tau_{\text{CPA}} = \frac{L_{\text{coh}}}{c_s}
+\]
+This expression defines the minimum tick interval between successive CIs in the same spatial region. No new coherent evolution can begin until this pacing delay has elapsed and the local substrate has recovered full coherence compatibility.
+
+This delay is not optional; it is structurally enforced. Collapse releases scalar tension into the substrate, and the surrounding region must resolve this tension before any structure can be re-instantiated. Even in the absence of external observers or classical interference, the substrate itself prevents evolution from resuming prematurely.
+
+Tick separation also provides a natural explanation for discreteness in quantum processes. Transitions between energy states, decay timing, and emission intervals are not random, but gated by this substrate mechanism. Apparent quantum jumps are manifestations of re-lock spacing---the result of pacing delays and structure-dependent reinitialization conditions.
+
+In this view, time is not a uniform flow. It is a series of coherence-supported intervals separated by causally required gaps. Each gap enforces a minimal delay based on substrate recovery bandwidth, and no evolution occurs outside of these permitted spans. The result is a model of quantum behavior that is not merely quantized in state, but \emph{quantized in causal pacing}.
+
+\subsection{CPA as a Radial Causal Shell}
+
+While CPA is structurally defined as a causal gating interval between CIs, it also exhibits geometric behavior: it propagates outward from the collapse point as a coherent, radial shell. This scalar offload wavefront moves spherically (or anisotropically under substrate gradients), defining a three-dimensional buffer zone in which no new Causality Interval may form until scalar recovery completes.
+
+This geometry is not metaphorical. In standard quantum theory, spherical harmonics, radial wavefunctions, and scattering cross sections all encode spherical symmetry. Yet these models lack an explanation for why collapse events exhibit such geometry. QSD fills this gap: it predicts that collapse produces a 3D scalar offload that expands through the substrate as a causal shell—explaining why quantum emissions and transitions often appear as angular distributions centered on the collapse region.
+
+This shell is structurally real in QSD. It limits re-lock probability outside its boundary, biases emission directionality under substrate gradients, and accounts for the delayed reappearance of coherent structures following collapse. It also offers a causal interpretation of the radial dependencies in quantum field propagators and spectral line splitting under field perturbations.
+
+CPA as a radial causal shell bridges the formalism of standard quantum mechanics with the structural dynamics of coherence-limited evolution. It provides a physical reason for mathematical symmetries already embedded in theory—and predicts observable skew when those symmetries are broken by substrate stress or curvature.
+
+\subsection{Mathematical Support for Radial CPA Structure}
+
+Standard quantum mechanics and quantum field theory make extensive use of spherical symmetry when modeling bound states, angular momentum, spontaneous emission, and scattering. These mathematical structures are not arbitrary—they are required to match high-precision experimental observations. In QSD, we propose that these spherical forms do not merely reflect mathematical convenience or external symmetries, but instead arise from a deeper causal mechanism: the scalar shell propagation of collapse structure through the substrate during Collapse Propagation Acceptance (CPA).
+
+\paragraph{Spherical Wavefunctions and Angular Emission.}
+Quantum states in central potentials—such as the hydrogen atom—are typically expressed in spherical coordinates:
+\[
+\psi_{n\ell m}(r, \theta, \phi) = R_{n\ell}(r) Y_{\ell m}(\theta, \phi)
+\]
+Here, \( R_{n\ell}(r) \) governs radial distribution, while the spherical harmonics \( Y_{\ell m}(\theta, \phi) \) define the angular dependence of the probability amplitude. These solutions naturally yield angular distributions in observable quantities such as photon emission, energy level transitions, and orbital coupling, all of which match experimental data to extremely high precision.
+
+QSD explains this structure causally. When a coherence structure collapses, its serialized offload propagates outward as a scalar CPA shell. The geometry of this propagation is inherently radial, constrained by local substrate curvature and scalar tension. The observed angular momentum quantization and emission distributions arise because the substrate enforces emission as spherical propagation, with directional bias encoded by substrate gradients. The angular structure of the wavefunction is not abstract—it is the signature of a real coherence geometry interacting with a finite causal boundary.
+
+\paragraph{Emission Rates and Transition Matrix Elements.}
+In standard treatments of spontaneous emission, transition probabilities between states are derived using Fermi’s Golden Rule:
+\[
+\Gamma_{i \to f} \propto \left| \langle f | \hat{H}_{\text{int}} | i \rangle \right|^2 \rho(E_f)
+\]
+where \( \hat{H}_{\text{int}} \) often involves electric dipole or quadrupole operators acting over wavefunctions defined on spherical domains. The angular dependence of the emission pattern arises directly from evaluating these matrix elements in spherical coordinates.
+
+QSD interprets this as a physically meaningful boundary condition. The collapse of a coherence structure projects a directional scalar disturbance into the surrounding substrate. Emission directionality reflects not an arbitrary basis choice, but the actual angular geometry of CPA shell propagation. The structure of matrix elements in these calculations reflects the interaction between the collapse geometry and the substrate's causal support zone.
+
+\paragraph{Scattering and Partial Wave Expansion.}
+In elastic scattering, the differential cross-section is often written as:
+\[
+\frac{d\sigma}{d\Omega} = \left| f(\theta, \phi) \right|^2
+\]
+where \( f(\theta, \phi) \) is expanded in partial waves:
+\[
+f(\theta, \phi) = \sum_{\ell=0}^{\infty} (2\ell + 1) f_\ell P_\ell(\cos\theta)
+\]
+The presence of Legendre polynomials and angular phase factors again encodes spherical propagation. Scattering is interpreted as radial wavefront interference with angular harmonics—another domain where quantum predictions match observed distributions with extreme fidelity.
+
+QSD interprets these patterns not as analytic residue, but as the outcome of radial CPA shell interaction with incident wavefronts and surrounding substrate conditions. The interference fringes, angular phase shifts, and preferred scattering directions are manifestations of CPA shells encountering curved or gradient-weighted coherence domains. What appears as angular symmetry in the math is, in QSD, a dynamically enforced geometric result.
+
+\paragraph{Summary.}
+These three domains—bound states, spontaneous emission, and scattering—all rely on spherical mathematical structures that are confirmed experimentally. Yet the physical origin of this symmetry remains implicit in the standard formalism. QSD provides a causal foundation: the substrate processes collapse through spherical CPA propagation, and the geometry of this offload governs emission directionality, re-lock bias, and observable outcome distributions.
+
+The high degree of alignment between the radial CPA model and the mathematical tools already used in quantum theory is not incidental. QSD does not contradict the math—it explains why it works. The spherical harmonics, radial eigenstates, and angular matrix elements used in quantum mechanics are the mathematical fingerprints of a causally bounded coherence system radiating structure through a three-dimensional substrate. In that sense, the formalism has always pointed toward a radiant causal shell—it simply lacked a substrate to radiate through.
+
+
+\section{Coherence Chaining and CI Continuity}
+
+\subsection{CI \texorpdfstring{$\rightarrow$}{->} CI' Transitions}
+
+In the QSD framework, quantum persistence is not automatic. A structure does not continuously evolve through time—it survives only by successfully re-locking into a new Causality Interval (CI') after its prior interval has collapsed. This re-locking process is not passive: it must occur after Collapse Propagation Acceptance (CPA) has cleared the substrate of scalar stress and restored coherence compatibility. Only when the substrate permits it may a new CI begin.
+
+A transition from $\text{CI} \rightarrow \text{CI}^{\prime}$ represents a successful \emph{causal handoff}—a structurally valid continuity of form across sequential coherence envelopes. This is the quantum analog of classical persistence, but instead of an object moving through space, it is a coherence geometry surviving through substrate constraints.
+
+To chain into a new CI, several structural conditions must be satisfied at the collapse boundary:
+\begin{itemize}
+    \item The geometry of the outgoing CI must project a serialized form that remains phase-compatible with substrate conditions beyond the boundary.
+    \item The scalar recovery period must conclude without introducing destructive interference or asymmetry that would inhibit re-locking.
+    \item The substrate must present a viable coherence volume—defined by local $L_{\text{coh}}$ and available $c_s$ bandwidth—capable of supporting a new locked structure.
+\end{itemize}
+
+If these criteria are met, re-lock occurs and evolution resumes as a new CI. If not, the structure terminates. There is no assumption of uninterrupted continuity; persistence must be earned through coherence compatibility.
+
+This causal gating mechanism explains several features of observed quantum systems:
+\begin{itemize}
+    \item Stable particles correspond to configurations that successfully re-lock over many consecutive CIs, forming extended coherence chains.
+    \item Quantum transitions such as energy level shifts arise from failures to re-lock into the same configuration, resulting in transition to a new permissible state.
+    \item Tunneling emerges as a spatially offset re-lock: the original CI collapses, but a new CI is formed across a substrate gap where phase compatibility is preserved.
+\end{itemize}
+
+CI chaining reframes the continuity of quantum systems not as uninterrupted flow, but as a series of discrete causal survivals. What appears as motion or transformation is, in QSD, a rhythm of collapse, evaluation, and successful re-lock. It is through this cycle that identity, energy, and correlation are preserved across causally gated time.
+
+\subsection{Momentum and Persistence as Chained Phase Resolution}
+
+In QSD, momentum is not defined as an intrinsic property of a particle or an abstract conserved vector. Instead, it is a structural artifact of successful phase propagation across chained Causality Intervals (CIs). A quantum system maintains persistence through time and space only by repeatedly satisfying the substrate’s re-lock conditions at the conclusion of each interval. Momentum, in this view, is the emergent consequence of \emph{phase continuity across causal gates}.
+
+Each Causality Interval contains a coherent structure supported by the substrate. As collapse occurs and the system enters the Collapse Propagation Acceptance (CPA) phase, the structure must project a serialized form—typically as a coherent emission or internal phase geometry—that can be re-instantiated in a neighboring substrate region. If the projected form satisfies the spatial phase compatibility and pacing criteria required for re-lock, a new CI' begins at a spatial offset. This offset becomes the geometric signature of momentum.
+
+Persistence is thus not guaranteed; it is the result of a structural handoff from one interval to the next. The more aligned a structure is with its own serialized form—meaning its phase configuration supports recurrence across CPA—the more stable and directional its behavior appears. From the external perspective, this manifests as inertial motion: the structure continues through space without apparent cause. From the substrate's point of view, this is simply a consequence of minimal phase deformation and sustained coherence compatibility across chained intervals.
+
+This approach naturally accounts for the discreteness and directionality of motion:
+\begin{itemize}
+    \item A system in uniform motion corresponds to a structure whose serialized emissions align spatially and phase-wise with re-lock opportunities across adjacent regions.
+    \item Higher momentum corresponds to faster re-lock pacing and longer chaining distances per interval, constrained by $L_{\text{coh}}$ and substrate gradients.
+    \item Changes in momentum result from CPA-modified re-lock geometries—either through external gradients or internal phase deformation—which redirect or inhibit the coherence chain.
+\end{itemize}
+
+In this framing, momentum is no longer a primitive quantity but a structural derivative. It encodes the directional success rate of CI chaining, regulated by coherence symmetry, emission profile, and substrate availability. It is a \emph{phase resolution history}, not a permanent label. When coherence fails to resolve cleanly across CPA, motion ceases. When it aligns, evolution continues. Momentum is the memory of what re-locks.
+
+\subsection{Gradient Skew and Asymmetric Offload}
+
+The collapse of a Causality Interval (CI) does not occur in isolation. The substrate surrounding the coherence structure is rarely uniform; tension gradients, coherence density variations, and nearby causal events all influence how the collapse geometry is serialized and how Collapse Propagation Acceptance (CPA) propagates. These asymmetries result in \emph{gradient skew}—a directional bias in offload propagation and re-lock likelihood that manifests in observable behavior.
+
+In the QSD framework, collapse projects a serialized structure outward through the CPA phase, radiating into adjacent substrate regions. If the surrounding substrate exhibits uniform coherence conditions, the CPA expands isotropically, and re-locking may occur symmetrically across potential neighboring regions. However, if the substrate contains gradients in scalar tension, coherence saturation, or curvature, then the CPA propagation becomes \emph{anisotropic}: the serialized output is absorbed, deflected, or delayed unevenly depending on direction.
+
+This gradient skew produces several key physical effects:
+\begin{itemize}
+    \item \textbf{Directional Emission:} The QEO, when projected into an asymmetric CPA, favors directions of lower substrate resistance. This leads to directional bias in particle emission or energy offload, even in structurally symmetric systems.
+    \item \textbf{Momentum Re-alignment:} Structures that would otherwise re-lock in one direction may be diverted if scalar tension or coherence density inhibits chaining in that region. Momentum vectors appear to curve or scatter in response to these gradients.
+    \item \textbf{Asymmetric Decoherence:} Entangled structures encountering asymmetric CPA environments may fail to re-lock synchronously, leading to staggered decoherence or biased collapse resolution in multipartite systems.
+\end{itemize}
+
+Gradient skew also imposes limits on re-lock reliability. In regions of high curvature or scalar stress—such as near gravitational masses or field discontinuities—the available volume for CPA to resolve cleanly is compressed. This not only narrows the angular region into which re-lock can occur, but also stretches the scalar pacing interval, delaying CI' initiation or suppressing it entirely.
+
+What appears, from the observer’s perspective, as spontaneous directionality or probabilistic emission is, in QSD, a structural consequence of spatial coherence geometry and tension differentials. Offload is not free to propagate equally in all directions; it follows the path of least substrate resistance. CPA does not merely bridge one CI to another—it \emph{selects} which neighboring region is causally viable for re-lock. Gradient skew gives this selection a preferred geometry.
+
+This effect is crucial for understanding emission asymmetry, spectral bias, and the directionality of collapse cascades. It also provides a physical basis for modeling how particles interact with background fields or embedded structure without invoking force-carrying particles or continuous fields. All such behaviors arise from the causal topology of the substrate.
+
+\section{Quantum Time and Its Misinterpretation}
+
+\subsection{Observable Time (\texorpdfstring{$T_a$}{Ta}) vs Structural Time (\texorpdfstring{$t_P$}{tP})}
+
+In standard quantum mechanics and relativistic physics, time is treated as a continuous parameter \(T_a\), available everywhere and always increasing. This coordinate time serves as a backdrop for all dynamics: wavefunctions evolve over it, measurements are timestamped by it, and field interactions are parameterized along it. But in QSD, this notion of a universal time axis is physically empty. The substrate does not respond to an abstract clock—it responds only to the coherence conditions that permit or deny causal evolution.
+
+The physically relevant quantity in QSD is \emph{structural time}, defined not as an external continuum but as the minimum pacing interval \(t_P\) required for coherence to re-lock after collapse. Time, in this view, is not a container—it is a permission. A structure exists in time only while it is inside an active Causality Interval (CI). When collapse occurs, time for that structure ends. Evolution does not resume until the substrate has passed through Collapse Propagation Acceptance (CPA) and issued a new CI. The duration of this interval is determined not by \(T_a\), but by substrate parameters:
+\[
+t_P = \frac{L_{\text{coh}}}{c_s}
+\]
+where \(L_{\text{coh}}\) is the coherence envelope size and \(c_s\) is the scalar recovery speed of the substrate.
+
+Observable time \(T_a\) may continue to increase from the perspective of an external clock, but from the structure’s point of view, there is no passage—no evolution, no motion, no state. The system is causally paused. Only when a new CI forms can time be said to resume. This structural view of time resolves longstanding ambiguities in quantum theory, such as:
+\begin{itemize}
+    \item Why collapse appears to occur instantaneously with no observable transition.
+    \item Why quantum systems only evolve when being measured or interacting.
+    \item Why some systems appear to “wait” before emitting, tunneling, or decaying.
+\end{itemize}
+
+These behaviors are not anomalies—they are natural consequences of structural time. In QSD, \(T_a\) is mathematically convenient, but it does not govern causality. Only \(t_P\), determined by substrate conditions, defines when structure exists and how evolution proceeds. Time is not an ever-present axis; it is a series of structurally gated intervals. The system is either evolving, or it is not. There is no in-between.
+
+This framing also clarifies why time asymmetry emerges in observation: each CI defines a causal envelope that evolves forward within its structure, but the observer reconstructs outcomes retrospectively, assembling them from re-lock endpoints. From the observer’s point of view, time seems to flow continuously. From the substrate’s perspective, time is punctuated, gated, and causally allocated one CI at a time.
+
+\subsection{Why Collapse Seems Instantaneous}
+
+From the perspective of conventional quantum mechanics, collapse appears to be an abrupt, pointlike event. A system evolves under unitary rules, and then—seemingly without causal warning—it yields a definite outcome upon measurement. This discontinuity is treated as fundamental: collapse is not derived, it is inserted. Yet in the QSD framework, collapse is neither abrupt nor instantaneous. It only appears that way because the observer is blind to the causal structure that governs when and how quantum events evolve.
+
+The key insight is that observable time \(T_a\) continues regardless of the substrate's causal state, while structural time \(t_P\) only flows when coherence is permitted. Collapse terminates the current Causality Interval (CI), and initiates a new phase—the Collapse Propagation Acceptance (CPA)—during which the system is causally inert. No motion, no evolution, and no structural activity occur within the system itself during this interval. The substrate processes scalar offload, evaluates re-lock conditions, and gates any future evolution based on structural criteria.
+
+However, to an external observer who is not coupled to the substrate's coherence cycle, this interval is invisible. The observer measures only the endpoint: the reappearance of the system in a definite state. The duration of CPA is unregistered because no interaction occurs during it. From the observer’s timeline, it seems as if the system jumped discontinuously from a superposition to a definite outcome without transition. In reality, the system ceased to exist in a coherent form and only re-emerged after CPA allowed re-locking.
+
+This illusion of instantaneous collapse is a direct result of interpreting \(T_a\) as a governing clock, rather than recognizing that structure is bound to pacing constraints defined by \(t_P\). The substrate does not “pause” and “resume” inside a flowing time—it permits causality in discrete, coherence-structured intervals. The interval between collapse and re-lock is real and physically necessary, but inaccessible to standard formalisms because it is not a region of active structure.
+
+QSD reframes collapse not as an event, but as a boundary condition. The evolution of a system does not proceed up to the collapse point and then suddenly stop—it proceeds up to the substrate’s structural tolerance, ruptures, and enters a causally quiet zone. Only when coherence can be reestablished does time resume for that structure. This framing explains not only why collapse seems instantaneous, but also why quantum systems appear to “wait” before emitting, transitioning, or resolving: the delay is not observational—it is causal.
+
+Collapse does not happen in time. It ends time, and structure, and causality—until the substrate says otherwise.
+
+\subsection{Illusion of Continuous Time}
+
+In classical physics and standard quantum theory, time is treated as a continuously flowing parameter. Equations are written as functions of \( t \), and solutions are assumed to evolve smoothly across that domain. This leads naturally to the assumption that physical systems exist at every moment and evolve without interruption. But in the QSD framework, this continuity is an illusion—useful for prediction, but disconnected from the actual causal mechanics of structure.
+
+QSD asserts that physical evolution only occurs within coherence-permitted spans—Causality Intervals (CI)—and that these intervals are separated by finite causal gaps during which no evolution occurs. Between collapse and the initiation of a new CI lies the Collapse Propagation Acceptance (CPA) interval, a structurally necessary delay that is invisible to standard observers. Time, in this framework, is not a flowing river but a sequence of permitted steps, each conditioned by substrate recovery and re-lock eligibility.
+
+The appearance of continuity arises from the observer’s reconstruction of events. Since the observer is always anchored in a coherent frame (their own CI), they perceive outcomes as arriving in continuous sequence, mapped onto their own \( T_a \) timeline. They measure inputs and outputs—before and after collapse—but not the CPA in between. This creates the impression that collapse was instantaneous, that persistence is smooth, and that time flowed uninterrupted. But these impressions are reconstructions based on observable re-lock points—not reflections of uninterrupted causal structure.
+
+More importantly, the continuity implied by mathematical formalisms such as Schrödinger evolution or path integrals is valid only within a CI. Those tools describe what happens when structure is already permitted to evolve—not how that permission is granted, or when it may be denied. The mathematical continuity is a powerful approximation, but it omits the gating logic of the substrate.
+
+From the substrate’s perspective, continuity does not exist. It issues causality in discrete packets, each delimited by collapse and contingent on structural re-lock. The illusion of continuous time is a byproduct of coherent projection and successful CI chaining—not a feature of the causal substrate itself.
+
+QSD resolves the paradox not by challenging the formalism of continuous time, but by contextualizing its domain of validity. Time appears to flow because structural outcomes arrive in succession. But in reality, time only flows when coherence is permitted—and halts when causality collapses.
+
+\section{Entanglement, Multiplicity, and Resonant Collapse}
+
+\subsection{Resonant Response in Multipartite Systems}
+
+In multipartite quantum systems, correlation between spatially separated structures is typically attributed to entanglement—a shared wavefunction whose parts collapse simultaneously upon measurement. This nonlocal behavior is often treated as mysterious or paradoxical, especially when interpreted through a purely abstract formalism lacking physical mediation. In the QSD framework, multipartite response is not nonlocal—it is \emph{resonant}. Structures correlate not through instantaneous influence, but through phase compatibility and pacing alignment across shared coherence envelopes.
+
+When a multipartite system is initialized, it may consist of two or more distinct CI-bound structures whose internal configurations are phase-matched and coherence-linked across a common substrate region. These structures are not bound in position but in timing: they are aligned to the same pacing interval \(t_P\), and their collapse boundaries are tuned to compatible re-lock conditions. This shared causal tuning creates the possibility of \emph{resonant collapse}: if one structure collapses and emits a serialized waveform, a partner structure with compatible internal geometry and scalar readiness may re-lock in direct response.
+
+This behavior is not instantaneous; it is causally gated. The partner structure can only respond if it is within its own Causality Interval and has sufficient substrate bandwidth to receive and resolve the incoming collapse emission. If both conditions are met, the partner structure experiences a synchronous or slightly lagged re-lock that aligns with the incoming emission structure. This mechanism explains how multipartite systems can show high-fidelity correlation despite spatial separation: they do not transmit collapse signals—they share structural conditions that allow mutual collapse resolution under coherent CPA influence.
+
+Resonant multipartite behavior also explains why such correlations decay with distance or under environmental stress. If one member of the system falls out of pacing alignment (e.g., through decoherence, substrate gradient distortion, or tick desynchronization), it becomes phase-incompatible and cannot re-lock in response to a partner’s collapse. The system no longer behaves as a coherent whole. This provides a physical, non-mystical account of why entanglement is preserved only under specific coherence conditions.
+
+From the QSD perspective, multipartite correlation is not imposed from above by a wavefunction—it is maintained from within by substrate coherence logic. The substrate permits resonant interaction only where pacing, geometry, and scalar tension remain compatible. Entanglement, then, is a byproduct of resonant causal tuning across separable CI structures—not a fundamental paradox, but a structural phase relationship.
+
+This model predicts that multipartite systems will exhibit correlation only within a coherence-aligned CPA window, and that loss of phase compatibility will cause abrupt or gradual collapse desynchronization. Such behavior has already been observed in decoherence experiments, but in QSD, it arises from physical structure—not statistical uncertainty.
+
+\subsection{Collapse Does Not Force Collapse}
+
+In conventional interpretations of quantum mechanics, entangled systems are modeled as sharing a single wavefunction across multiple particles. Upon observation of one, the entire system is said to collapse instantaneously, producing correlated outcomes regardless of spatial separation. This suggests that collapse in one location \emph{forces} collapse in another—a claim that introduces conceptual tension with locality, causality, and structural independence.
+
+In the QSD framework, this assumption is unnecessary. Collapse is treated not as an externally imposed discontinuity, but as a localized structural event: a coherence-bound configuration reaching its causal boundary and transitioning through collapse. The emission produced by a Quantum Emission Opportunity (QEO) may propagate outward through the substrate during Collapse Propagation Acceptance (CPA), but it does not \emph{command} collapse in other structures. Instead, it provides a causal opportunity.
+
+Partner structures do not automatically collapse in response. Instead, they respond only if three structural conditions are met:
+\begin{enumerate}
+    \item They are within an active Causality Interval (CI);
+    \item They are phase-compatible with the incoming emission;
+    \item They have sufficient substrate availability to re-lock in response.
+\end{enumerate}
+
+Only when all three are satisfied can resonant re-locking occur. If any condition is not met—due to phase drift, decoherence, substrate tension, or tick desynchronization—the partner structure does not collapse. The serialized emission may pass through, fail to couple, or dissipate entirely.
+
+This produces a richer, more physically grounded account of multipartite behavior. Collapse in one structure leads not to a fixed outcome in another, but to a set of \emph{causally gated possibilities}, including:
+\begin{itemize}
+    \item \textbf{Resonant re-lock:} A structurally matched response leads to correlated collapse.
+    \item \textbf{Asymmetric continuation:} One structure collapses, the other continues unperturbed.
+    \item \textbf{CPA suppression:} Scalar stress or tick misalignment prevents re-locking entirely.
+    \item \textbf{Delayed collapse:} Response occurs only after pacing or phase realignment.
+    \item \textbf{Structural dropout:} Failure to re-lock terminates the structure permanently.
+\end{itemize}
+
+Collapse, in this framing, is never imposed—it is gated. The substrate does not compel outcomes, it permits them. Each structure collapses—or survives—based solely on its local coherence state and its ability to resolve serialized input structurally. This explains why some entangled systems collapse together while others appear to fall apart asymmetrically or resist correlation altogether.
+
+By treating collapse as a structurally gated opportunity rather than a compulsory chain reaction, QSD preserves the reality of correlation while removing its paradoxes. Entanglement is not enforced across distance; it is preserved only where coherence conditions align. There is no spooky action—only the structural logic of substrate-bound response.
+
+
+\subsection{CI Compatibility Defines Possible Correlation}
+
+In the QSD framework, quantum correlation is not an intrinsic link between particles, but an emergent phenomenon that depends on the compatibility of their Causality Intervals (CIs). Structures may be initialized in a correlated configuration, but their ability to remain entangled or respond coherently depends entirely on their capacity to maintain alignment across their respective causal cycles. Correlation is therefore not a guaranteed property—it is a structurally conditional outcome.
+
+Each CI evolves within its own pacing constraints, defined by the local coherence envelope, scalar recovery bandwidth, and phase geometry. For two or more structures to remain correlated in the QSD sense, their respective CIs must satisfy three conditions:
+\begin{enumerate}
+    \item \textbf{Temporal alignment:} Their CI ticks must remain synchronized within substrate pacing tolerance, such that collapse or QEO events occur within a shared CPA window.
+    \item \textbf{Phase compatibility:} Their internal geometries must remain mutually resonant, allowing serialized emissions from one structure to be absorbed and resolved by the other.
+    \item \textbf{Substrate availability:} Both structures must occupy coherence-ready regions that support simultaneous re-lock under scalar pacing limits.
+\end{enumerate}
+
+If these conditions hold, the structures may collapse in response to one another, maintaining correlated outcomes across space and time. If even one condition is violated—if the ticks desynchronize, if a structure decoheres, or if the substrate in one region becomes saturated—correlation fails. The partner structure does not collapse in response, and the multipartite behavior dissolves into independent evolution or decoherence.
+
+This model reframes quantum correlation as a dynamic, conditional process. There is no permanent entanglement, only the possibility of coherent interaction maintained through strict causal constraints. The traditional notion of a shared wavefunction is replaced by the requirement of mutual CI compatibility. When collapse occurs in one structure, it may issue a coherent emission, but whether any partner responds depends entirely on its current substrate and phase state.
+
+In this sense, correlation is not an identity property—it is a behavior gated by structural resonance and substrate synchronization. The CI is not merely the container of coherence; it is the gatekeeper of correlation. Without CI compatibility, there is no meaningful causal path between multipartite structures, and no correlation can be preserved.
+
+This interpretation resolves the nonlocality paradox by placing all causal exchange within the substrate itself. Nothing is transmitted faster than light or instantaneously across space. Instead, what appears as nonlocal correlation is the outcome of two or more systems sharing a synchronized causal frame—and retaining that synchronization long enough for coherent response to be possible.
+
+\section{Structural Interpretation of Quantum Evolution}
+\subsection{CPA as the Physical Prerequisite for Time and Continuity}
+
+In QSD, the Collapse Propagation Acceptance (CPA) interval is not an aftermath—it is the \emph{necessary precursor} to any renewed causal evolution. It is the structural condition that must be met before time, motion, and continuity can resume. Without CPA, no new Causality Interval (CI) can form, and no system can evolve. In this framework, CPA is not a passive recovery phase—it is the \emph{physical prerequisite for the next moment}.
+
+When a CI collapses, the substrate must clear the scalar stress and serialized waveform geometry emitted at the Quantum Emission Opportunity (QEO). This offloaded structure propagates outward through the substrate as a scalar shell, defining a region in which no coherence support can occur until recovery conditions are satisfied. During CPA, causality is locally suspended: structure is absent, pacing is disallowed, and evolution is prohibited.
+
+Only when CPA concludes—when scalar recovery completes and the substrate permits a new re-lock—can time resume for the system. This means that from the substrate’s perspective, there is no continuity between collapse and reappearance. The system is not evolving behind the scenes, nor is it lingering in a superposed limbo. It has ceased to exist as a causal entity until conditions allow its return.
+
+This substrate-enforced pause explains why quantum systems exhibit discrete transitions, delayed emissions, and sudden reappearances. These phenomena are not probabilistic quirks—they are structural consequences of causal gating. CPA defines the minimum time and spatial buffer between collapse and re-lock, preventing causal overlap and enforcing continuity as a regulated event. It replaces the notion of continuous presence with a rhythm of permitted existence.
+
+CPA also anchors time itself. Observable time \(T_a\) may proceed continuously for the observer, but the system’s own structural time \(t_P\) only resumes after CPA allows it. This means that time is not a global variable, but a local permission. The ticking of quantum systems is not tied to the passage of abstract time—it is tied to the substrate’s capacity to re-host coherence.
+
+Thus, CPA is not merely a transition zone—it is the mechanism by which the substrate resets the stage for causality to unfold again. It is the \emph{physical origin of continuity}, the enabler of temporal flow, and the causal validator of quantum evolution. Nothing returns until CPA says it can.
+
+
+\subsection{Entanglement Decay as Tick Desynchronization}
+
+In standard quantum mechanics, entanglement decay is often described in terms of environmental decoherence—the gradual loss of phase correlation due to uncontrolled interactions with external systems. While this heuristic is useful, it offers no underlying causal structure for when or why entanglement breaks down. In QSD, entanglement decay has a precise structural cause: it occurs when coherence-bound systems fall out of causal synchronization, a failure known as \emph{tick desynchronization}.
+
+Each coherence structure in QSD evolves within a Causality Interval (CI), paced by a substrate-defined tick duration \(t_P = L_{\text{coh}}/c_s\). For multipartite systems to remain phase-correlated, their respective CIs must remain tick-aligned within a tolerable pacing window. That is, the collapse boundaries, quantum emission opportunities, and CPA intervals of each structure must remain in synchrony such that coherent exchange or mutual collapse remains possible.
+
+Tick desynchronization occurs when one or more of the following conditions are met:
+\begin{itemize}
+    \item A structure enters CPA while its partner remains in a CI, breaking mutual pacing.
+    \item Environmental substrate gradients alter the local tick duration of one structure relative to another.
+    \item One system undergoes spontaneous re-lock or collapse that the other cannot resolve or match in real time.
+\end{itemize}
+
+Once tick alignment is lost, serialized emissions from one structure may arrive while the partner is in a CPA blackout or coherence-incompatible state. The partner structure cannot respond, and no correlated collapse occurs. Entanglement is not destroyed by noise, but by the breakdown of shared causal rhythm.
+
+This framing reinterprets entanglement not as a fragile superposition, but as a state of \emph{causal synchronization}. So long as two systems maintain aligned pacing, substrate availability, and phase compatibility, correlation remains possible. But if one system’s tick clock diverges from the other’s—through drift, stress, or interaction—the causal window for correlation closes. The systems revert to independent CI cycles, each governed by their local substrate conditions.
+
+QSD thus provides a structural explanation for the finite coherence length and temporal stability of entangled systems. It predicts that correlation will fail when the coherence clocks desynchronize—not when noise reaches a threshold, but when pacing compatibility fails. This model unifies entanglement and decoherence under a single substrate mechanism: the maintenance or loss of causal rhythm.
+
+What appears as statistical decay is, in QSD, the physical signature of falling out of sync.
+
+\subsection{Reframing Collapse as Causal Pacing Exhaustion}
+
+In conventional quantum mechanics, collapse is an undefined event—an abrupt termination of superposition triggered by observation or environmental decoherence. It is modeled mathematically, but lacks causal grounding. Within the QSD framework, collapse is not mysterious; it is structurally inevitable. Collapse occurs when a coherence structure reaches the limit of its causal pacing capacity and can no longer sustain evolution. It is not an externally imposed boundary, but a self-limiting structural exhaustion.
+
+Every Causality Interval (CI) is governed by the pacing conditions of the substrate, including scalar coherence tension, symmetry stability, and energy curvature. These define how long and how far a structure can persist before its internal coherence can no longer be maintained. As evolution proceeds, phase distortion accumulates. Internal wavefronts become increasingly stressed by gradients, boundary reflections, or interaction with other structures. Eventually, the structure approaches a critical point at which continued coherence cannot be supported.
+
+This point is the Collapse Boundary (CB)—not a trigger, but a threshold. It is the edge beyond which causal pacing cannot be sustained without violating substrate limits. Collapse, then, is the result of running out of structural slack: the coherence geometry can no longer be re-locked under the current substrate conditions. Collapse does not destroy the structure—it ends the interval in which it was allowed to exist.
+
+QSD reframes collapse as a pacing failure. The system does not arbitrarily snap into a measurement state; it reaches the edge of a permitted coherence span and exhausts its causal license. This explains why:
+\begin{itemize}
+    \item Quantum transitions appear discrete—because re-lock occurs only after collapse and scalar pacing recovery.
+    \item Emissions occur after a delay—because collapse must be processed through CPA before any new structure can resume.
+    \item Structure fails nonlinearly—because collapse is triggered not by a smooth depletion, but by a tipping point in pacing stress.
+\end{itemize}
+
+By viewing collapse as causal pacing exhaustion, QSD removes the need for probabilistic metaphysics or observer-centric interventions. Collapse becomes the natural result of trying to evolve a structure beyond the substrate’s permitted span. It is not a reaction to external observation; it is a built-in feature of finite coherence.
+
+This perspective makes collapse predictable in principle, if not in detail. The failure is structural. The system runs out of the ability to support its own existence. Collapse is the moment when the substrate says: \emph{you have reached the edge of your allowable time}.
+
+\section{Experimental Implications and Investigative Pathways}
+
+The structural framework of QSD offers several novel, testable predictions that differ from traditional quantum interpretations. These predictions arise not from modifying quantum mechanics, but from embedding it within a physically gated substrate with coherence pacing, collapse-bound causal regions, and re-lock criteria. Here we outline four proposed experimental directions that could empirically probe the causal substrate model and identify signatures of coherence-limited quantum evolution.
+
+\subsection{Finite Coherence Reach and Correlation Falloff}
+
+QSD predicts that multipartite quantum systems should exhibit a finite coherence reach—beyond which entanglement and correlation cannot be preserved due to tick desynchronization and substrate divergence. Unlike standard quantum theory, which permits arbitrary correlation distances (limited only by noise), QSD defines a hard cutoff set by the coherence envelope length \(L_{\text{coh}}\) and substrate gradient.
+
+\textbf{Proposed approach:}  
+Design multipartite entanglement experiments with distance-separated detectors or atoms, gradually increasing spatial separation in low-noise environments. Measure correlation fidelity and Bell inequality violation strength as a function of separation distance. QSD predicts a sharp drop at the coherence boundary, even in the absence of decoherence sources.
+
+\subsection{Tick Pacing Limits in Emission Timing}
+
+In QSD, emissions are not purely probabilistic—they are gated by tick pacing, determined by substrate recovery time \(\tau_{\text{CPA}} = L_{\text{coh}} / c_s\). This introduces a lower-bound spacing between emissions from a given structure or source.
+
+\textbf{Proposed approach:}  
+Use high-precision photon emission time-tagging from a single quantum emitter (e.g., trapped ion or quantum dot). Look for an absolute minimum time between emissions that cannot be crossed, regardless of driving field strength. Deviations from Poisson statistics at ultrashort intervals may indicate scalar pacing constraints and CPA enforcement.
+
+\subsection{Scalar Offload Signatures in Multipartite Decoherence}
+
+CPA propagates scalar offload following collapse, which may influence nearby coherence zones. In multipartite systems with controlled phase coupling, this offload may induce asymmetric decoherence or timing bias even without direct entanglement collapse.
+
+\textbf{Proposed approach:}  
+Prepare two non-interacting, coherence-tuned qubits in nearby spatial regions. Collapse one intentionally and measure whether the other shows phase instability or early decoherence compared to baseline. QSD predicts that scalar offload from the first collapse could bias substrate coherence in the neighboring region, even without direct coupling.
+
+\subsection{Thermal Memory Effects from Incomplete CPA Recovery}
+
+If CPA is not fully resolved before a new CI attempts to form, the residual scalar tension may influence the stability or bias of the new structure. This could lead to short-timescale thermal memory effects, where recent collapse history skews re-lock dynamics.
+
+\textbf{Proposed approach:}  
+Subject a coherence-supporting structure (e.g., Rydberg atom array or superconducting qubit) to rapid cycling collapse/re-lock conditions. Measure whether the system exhibits thermal bias, coherence asymmetry, or phase drift depending on recent collapse rate. QSD predicts incomplete CPA resolution may leave behind a temporary substrate memory effect analogous to thermal lag or momentum.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This work extends the causal framework of Quantum Substrate Dynamics (QSD) to include the full structural cycle of quantum evolution: from coherence emergence, to collapse, to conditional re-lock. By introducing the Collapse Propagation Acceptance (CPA) phase and formalizing the logic of CI chaining, we reframe collapse not as an instantaneous or abstract discontinuity, but as a physically gated transition governed by pacing, geometry, and substrate availability.
+
+Time, under this model, is not a continuous background variable but a structural permission—an emergent property of coherence that begins with re-lock and ends with collapse. Observable continuity is a projection built from successful re-locking across discrete Causality Intervals, separated by CPA intervals during which no evolution is permitted. Persistence, motion, correlation, and even momentum are reinterpreted as the outcomes of successful phase resolution and structural survival under pacing constraints.
+
+Multipartite systems, often treated as paradoxical in standard quantum theory, find natural explanations in this model. Correlation is shown to be a function of tick synchronization and phase compatibility, not a metaphysical connection or nonlocal action. Collapse in one region does not force collapse elsewhere—it creates conditional causal opportunity, which only manifests if a partner structure is substrate-compatible and phase-aligned at the moment of emission arrival.
+
+The QSD model preserves the predictive success of quantum mechanics and quantum field theory, but grounds them in a causally complete substrate. The familiar formalism of QM/QFT remains valid—but only where coherence is permitted and pacing is satisfied. What was previously treated as discontinuous or unexplained—collapse, delay, asymmetry, decoherence—is revealed as structurally governed and physically necessary.
+
+This work proposes not a new quantum mechanics, but a causal closure beneath it. The mathematical predictions remain; the difference is that now, they rest on something real.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{6pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% optional
+%\supplementary{The following supporting information can be downloaded at:  \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.}
+
+% Only for journal Methods and Protocols:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title. A supporting video article is available at doi: link.}
+
+% Only used for preprtints:
+% \supplementary{The following supporting information can be downloaded at the website of this paper posted on \href{https://www.preprints.org/}{Preprints.org}.}
+
+% Only for journal Hardware:
+% If you wish to submit a video article, please do so with any other supplementary material.
+% \supplementary{The following supporting information can be downloaded at: \linksupplementary{s1}, Figure S1: title; Table S1: title; Video S1: title.\vspace{6pt}\\
+%\begin{tabularx}{\textwidth}{lll}
+%\toprule
+%\textbf{Name} & \textbf{Type} & \textbf{Description} \\
+%\midrule
+%S1 & Python script (.py) & Script of python source code used in XX \\
+%S2 & Text (.txt) & Script of modelling code used to make Figure X \\
+%S3 & Text (.txt) & Raw data from experiment X \\
+%S4 & Video (.mp4) & Video demonstrating the hardware in use \\
+%... & ... & ... \\
+%\bottomrule
+%\end{tabularx}
+%}
+
+\section*{Statements and Declarations}
+\subsection*{Funding}  
+The author received no financial support for the research, authorship, or publication of this article.
+The author has no relevant financial or non-financial interests to disclose.
+
+\subsection*{Competing Interests}  
+The author declares no competing interests.
+
+\subsection*{Author Contributions}  
+The author solely conceived, developed, and wrote the manuscript, including all theoretical content, references, and formatting.
+
+\subsection*{Data Availability}  
+No datasets were generated or analyzed during the current study. All references are publicly available.
+
+\subsection*{Ethical Approval}  
+Not applicable.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+
+%% Only for journal Encyclopedia
+%\entrylink{The Link to this entry published on the encyclopedia platform.}
+
+\abbreviations{Abbreviations}{
+The following abbreviations are used in this manuscript:
+\\
+
+\noindent
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{@{}ll}
+\textbf{Symbol} & \textbf{Definition} \\
+\toprule
+QSD & Quantum Substrate Dynamics \\
+CI & Causality Interval — substrate-permitted span of coherent evolution \\
+CB & Collapse Boundary — structural endpoint of a CI \\
+QEO & Quantum Emission Opportunity — serialized offload condition at CB \\
+CPA & Collapse Propagation Acceptance — gated recovery and re-lock interval \\
+\( c_s \) & Scalar coherence recovery speed (longitudinal/temporal mode) \\
+\( c_t \) & Transverse coherence propagation speed (lateral/spatial mode) \\
+\( L_{\text{coh}} \) & Local coherence support length (envelope radius for CI support) \\
+\( t_P \) & Minimum pacing interval \( = \frac{L_{\text{coh}}}{c_s} \) \\
+\( t_{\text{tick}} \) & Substrate pacing duration per CI (locally determined tick) \\
+\( T_a \) & Apparent observer time (coordinate time axis) \\
+\( f_{\text{relock}} \) & Re-lock probability under substrate tension and phase compatibility \\
+\( \theta(\vec{r}) \) & Local coherence phase geometry \\
+\( \Delta \phi \) & Phase misalignment between sequential CIs \\
+\( \delta_{\text{tick}} \) & Tick desynchronization between multipartite structures \\
+\( \rho_{\text{CPA}}(r) \) & Radial CPA tension profile following collapse \\
+\( \vec{\nabla}T \) & Substrate gradient affecting re-lock bias \\
+\( \gamma \) & Lorentz-compatible re-lock factor (if needed for relativistic comparison) \\
+\bottomrule
+\end{tabular}
+\caption{Relevant causal and structural quantities in the QSD coherence-collapse cycle.}
+\end{table}
+
+
+}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optional
+\appendixtitles{no} % Leave argument "no" if all appendix headings stay EMPTY (then no dot is printed after "Appendix A"). If the appendix sections contain a heading then change the argument to "yes".
+\appendixstart
+\appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[\appendixname~\thesection]{}
+\subsection[\appendixname~\thesubsection]{Structural Resolutions to Foundational Quantum Problems}
+
+\subsubsection{Overview}
+
+This appendix summarizes how the Quantum Substrate Dynamics (QSD) framework addresses long-standing interpretive challenges in quantum mechanics and quantum field theory. These structural resolutions preserve the predictive formalism of standard quantum theory while embedding it in a causally gated substrate with coherence pacing, collapse boundaries, and re-lock conditions. The goal is not to replace quantum mechanics, but to supply the physical logic its equations implicitly rely upon.
+
+\subsubsection{Structural Comparison Table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{3.8cm}|p{5.3cm}|p{5.8cm}|}
+\hline
+\textbf{Foundational Issue} & \textbf{Standard Interpretation} & \textbf{QSD Structural Resolution} \\
+\hline
+Collapse is undefined & Observer-induced discontinuity or stochastic postulate & Collapse occurs structurally at the Collapse Boundary (CB) due to pacing exhaustion, followed by CPA \\
+\hline
+Entanglement is nonlocal & Instantaneous state resolution across distance, often interpreted as acausal & Correlation emerges only where CPA conditions and tick pacing align across coherence-compatible regions \\
+\hline
+Time is continuous & Assumed universal background for evolution and measurement & Time is local and substrate-issued within CIs, with enforced pauses during CPA where causality is gated \\
+\hline
+Discreteness is unexplained & Quantization is axiomatic or symmetry-derived & Discrete behavior arises from tick pacing and re-lock conditions: $\tau_{\text{CPA}} = L_{\text{coh}} / c_s$ \\
+\hline
+Probability is axiomatic & Born rule is inserted post-evolution with no causal basis & Probability emerges from re-lock likelihood across the CPA shell geometry and substrate asymmetry \\
+\hline
+Motion is intrinsic & Momentum is fundamental property of particles & Momentum is emergent: sustained CI chaining through phase continuity across space and time \\
+\hline
+Decoherence is statistical & Environmental noise disrupts superposition randomly & Decoherence arises from tick desynchronization, coherence dropout, or CPA incompatibility \\
+\hline
+Collapse appears instantaneous & Modeled as zero-duration transition or discontinuity & Collapse ends time for the structure; CPA defines a real causal delay before the next CI can re-lock \\
+\hline
+\end{tabular}
+\caption{Comparison of standard quantum interpretations with structural resolutions provided by QSD.}
+\end{table}
+
+\subsubsection{Implications}
+
+QSD provides causal closure to quantum evolution by replacing unexplained transitions with substrate-governed processes. Collapse is not a probabilistic mystery, but a structural phase shift. Time is not universal, but causally issued. Correlation is not imposed, but emerges from pacing alignment. 
+
+These insights are not merely philosophical—they are experimentally actionable. QSD predicts specific re-lock intervals, scalar offload behavior, and gradient-dependent asymmetries in emission and collapse. The framework suggests that many "quantum mysteries" are artifacts of incomplete causal modeling. Once pacing, coherence, and substrate topology are accounted for, quantum behavior becomes structurally intelligible and causally self-consistent.
+
+QSD thus resolves foundational problems by supplying what quantum theory lacks: not new math, but physical meaning.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[\appendixname~\thesection]{}
+\subsection[\appendixname~\thesubsection]{Comparison with Selected Interpretations}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+This appendix briefly compares the Quantum Substrate Dynamics (QSD) framework to several well-known interpretations of quantum mechanics. These models differ not in predictive outcomes, but in how they attempt to explain the transition from quantum evolution to observed outcome. QSD does not attempt to displace these views, but offers a physically grounded alternative in which causality, structure, and coherence pacing determine when and how collapse occurs.
+
+\subsubsection{Copenhagen Interpretation}
+The Copenhagen view holds that wavefunction collapse is real, but does not offer a mechanism for when or why it occurs. The observer plays a central role in triggering discontinuous outcomes.
+
+\textbf{QSD contrast:} Collapse occurs structurally, not observationally. It marks the exhaustion of a coherence interval, with CPA defining the causal delay before re-lock. Observation records the outcome of collapse—it does not cause it.
+
+\subsubsection{Bohmian Mechanics}
+Bohmian models preserve a deterministic trajectory by introducing a guiding wave and hidden variables. The particle has a definite path, and nonlocal effects are accepted as fundamental.
+
+\textbf{QSD contrast:} QSD offers structural continuity through CI chaining rather than trajectory. Nonlocality is replaced by pacing-aligned CPA propagation, ensuring correlation only occurs under causal compatibility.
+
+\subsubsection{GRW Theory (Spontaneous Collapse)}
+The Ghirardi–Rimini–Weber model introduces a built-in collapse mechanism through stochastic processes, with randomly triggered wavefunction reductions over time.
+
+\textbf{QSD contrast:} Collapse in QSD is deterministic in structure but conditional. It is not spontaneous but arises from coherence exhaustion at the CB. Timing is governed by substrate pacing and geometric strain—not randomness.
+
+\subsubsection{Many-Worlds Interpretation}
+Many-Worlds posits that all possible outcomes occur in separate, branching universes. Collapse is an illusion created by observer-specific decoherence.
+
+\textbf{QSD contrast:} QSD retains a single-world ontology, but introduces real causal collapse as a structural re-lock condition. There is no need for interpretational bloat; quantum branching is replaced by pacing constraints and permitted reconvergence.
+
+\subsubsection{Summary}
+QSD does not seek to compete with or reinterpret existing frameworks—it supplies what many of them assume but do not explain: a physical structure that gates evolution. Collapse becomes a finite structural event, not a mystery. Continuity is no longer inferred—it is earned.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\isPreprints{}{% This command is only used for ``preprints''.
+\begin{adjustwidth}{-\extralength}{0cm}
+} % If the paper is ``preprints'', please uncomment this parenthesis.
+%\printendnotes[custom] % Un-comment to print a list of endnotes
+
+\reftitle{References}
+
+% Please provide either the correct journal abbreviation (e.g. according to the “List of Title Word Abbreviations” http://www.issn.org/services/online-services/access-to-the-ltwa/) or the full name of the journal.
+% Citations and References in Supplementary files are permitted provided that they also appear in the reference list here. 
+
+%=====================================
+% References, variant A: external bibliography
+%=====================================
+% \bibliography{your_external_BibTeX_file}
+
+%=====================================
+% References, variant B: internal bibliography
+%=====================================
+\newpage
+% ACS format
+\isAPAandChicago{}{%
+\begin{thebibliography}{999}
+
+% Reference 
+\bibitem{bush-qmqft}
+\textbf{Preprint.}Bush, M. (2025). Planck Constants as Collapse Boundaries: A Structural Framing of Quantum Evolution in Substrate Theory. \textit{Zenodo}.  \url{https://doi.org/10.5281/zenodo.15935968}
+% Reference 
+\bibitem{bush2025}
+\textbf{Preprint.} Bush, M. (2025). Quantum Substrate Dynamics (QSD): A Relativistic Field Model of Emergent Mass, Inertia and Gravity. \textit{Preprints}, 2025060988. \url{https://doi.org/10.20944/preprints202506.0988.v1}
+
+\end{thebibliography}
+}
+
+% Chicago format (Used for journal: arts, genealogy, histories, humanities, jintelligence, laws, literature, religions, risks, socsci)
+\isChicagoStyle{%
+\begin{thebibliography}{999}
+% Reference 1
+%\bibitem[Aranceta-Bartrina(1999a)]{ref-journal}
+%Aranceta-Bartrina, Javier. 1999a. Title of the cited article. \textit{Journal Title} %6: 100--10.
+% Reference 2
+
+\end{thebibliography}
+}{}
+
+% APA format (Used for journal: admsci, behavsci, businesses, econometrics, economies, education, ejihpe, games, humans, ijfs, journalmedia, jrfm, languages, psycholint, publications, tourismhosp, youth)
+\isAPAStyle{%
+\begin{thebibliography}{999}
+% Reference 1
+%\bibitem[\protect\citeauthoryear{Azikiwe \BBA\ Bello}{{2020a}}]{ref-journal}
+%Azikiwe, H., \& Bello, A. (2020a). Title of the cited article. \textit{Journal Title}, \textit{Volume}(Issue), 
+%Firstpage--Lastpage/Article Number.
+
+\end{thebibliography}
+}{}
+
+% If authors have biography, please use the format below
+%\section*{Short Biography of Authors}
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author1.pdf}}}
+%{\textbf{Firstname Lastname} Biography of first author}
+%
+%\bio
+%{\raisebox{-0.35cm}{\includegraphics[width=3.5cm,height=5.3cm,clip,keepaspectratio]{Definitions/author2.jpg}}}
+%{\textbf{Firstname Lastname} Biography of second author}
+
+% For the MDPI journals use author-date citation, please follow the formatting guidelines on http://www.mdpi.com/authors/references
+% To cite two works by the same author: \citeauthor{ref-journal-1a} (\citeyear{ref-journal-1a}, \citeyear{ref-journal-1b}). This produces: Whittaker (1967, 1975)
+% To cite two works by the same author with specific pages: \citeauthor{ref-journal-3a} (\citeyear{ref-journal-3a}, p. 328; \citeyear{ref-journal-3b}, p.475). This produces: Wong (1999, p. 328; 2000, p. 475)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for journal Sci
+%\reviewreports{\\
+%Reviewer 1 comments and authors’ response\\
+%Reviewer 2 comments and authors’ response\\
+%Reviewer 3 comments and authors’ response
+%}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\isPreprints{}{\PublishersNote{}}
+\isPreprints{}{% This command is only used for ``preprints''.
+\end{adjustwidth}
+} % If the paper is ``preprints'', please uncomment this parenthesis.
+\end{document}
+
